@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Belajar Membuat JSON",
+    "tags": ["json", "tutorial", "programming"],
+    "date": "2023-10-05"
+  },
+  {
+    "title": "Pengenalan REST API",
+    "tags": ["api", "web development", "rest"],
+    "date": "2023-10-06"
+  },
+  {
+    "title": "Tips Mengoptimalkan Kode JavaScript",
+    "tags": ["javascript", "optimization", "coding"],
+    "date": "2023-10-07"
+  },
+  {
+    "title": "Membuat Aplikasi dengan React",
+    "tags": ["react", "frontend", "javascript"],
+    "date": "2023-10-08"
+  },
+  {
+    "title": "Memahami Async/Await di JavaScript",
+    "tags": ["javascript", "async", "promise"],
+    "date": "2023-10-09"
+  }
+]
