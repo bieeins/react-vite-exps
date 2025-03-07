@@ -1,13 +1,11 @@
+import { useState } from "react";
 import postsData from "../posts.json";
 import Article from "../components/Article";
 import Search from "../components/Search";
-import { useState, useEffect } from "react";
 
 function HomePage() {
   const [posts, setPosts] = useState(postsData);
-
   const [totalPosts, setTotalPosts] = useState(0);
-  // const [apiPosts, setApiPosts] = useState([]);
 
   const onSearchChange = (value) => {
     const filteredPosts = postsData.filter((item) =>
@@ -20,15 +18,13 @@ function HomePage() {
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/posts")
   //     .then((response) => response.json())
-  //     .then((json) => setApiPosts(json));
+  //     .then((json) => setExternalPosts(json));
   // }, []);
-
-  useEffect(() => {}, [posts]);
 
   return (
     <>
       <h1>Simple Blog</h1>
-      <Search lemparData={onSearchChange} totalPosts={totalPosts} />
+      <Search onSearchChange={onSearchChange} totalPosts={totalPosts} />
       {posts.map((props, index) => (
         <Article {...props} key={index} />
       ))}
